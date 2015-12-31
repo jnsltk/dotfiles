@@ -1,0 +1,35 @@
+// Color scheme of Screenshot lubuntu#01
+
+URxvt*scrollBar: false
+URxvt*background: #162933
+URxvt*foreground: #eeeeee
+URxvt*font: xft:Tewi:pixelsize=11:antialias=false
+URxvt*boldFont: xft:Tewi-bold:pixelsize=11:antialias=false
+URxvt*depth: 32
+URxvt*antialias: false
+URxvt*cursorColor: #bea492
+
+! black
+URxvt*color0: #787878
+URxvt*color8: #414141
+! red
+URxvt*color1: #bea492
+URxvt*color9: #b46565
+! green
+URxvt*color2: #b1d1b3
+URxvt*color10: #93bb95
+! yellow
+URxvt*color3: #f5edce
+URxvt*color11: #f4e7b1
+! blue
+URxvt*color4: #9fc2c5
+URxvt*color12: #6c9b9f
+! magenta
+URxvt*color5: #e8c6d2
+URxvt*color13: #e193ae
+! cyan
+URxvt*color6: #c6d4db
+URxvt*color14: #9ab9c8
+! white
+URxvt*color7: #eeeeec
+URxvt*color15: #d3d7cf
