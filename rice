@@ -8,7 +8,7 @@ processor="AMD 64"
 kernel=$(uname -r -s)
 font="Tewi"
 uptime=$(uptime -p)
-wm="Herbstluftwm"
+wm="herbstluftwm"
 terminal="URxvt"
  
 echo ""
