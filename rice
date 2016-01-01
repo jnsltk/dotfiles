@@ -15,10 +15,13 @@ echo ""
 echo -e '                         ' "\e[34m$username\e[0m@\e[94m$hostname\e[0m"
 echo -e '　 　   __,,,,,,__   '
 echo -e '　　　(:(　　　　 )　    ' "\e[33m$uptime\e[0m"
-echo -e '　　　 |:| ●レ ● |   '
+echo -e '　　　 |:| ●レ ● |  '
 echo -e '　　　 |:|　 つ  |　     ' "\e[31mDistro:\e[0m $distro"
 echo -e '　　　 |:|　 　  |　     ' "\e[31mKernel:\e[0m $kernel"
 echo -e '        ￣￣￣￣￣       ' "\e[31mFont:\e[0m $font"
 echo -e '                         ' "\e[31mTerminal:\e[0m $terminal"
 echo -e '                         ' "\e[31mWM:\e[0m $wm"
-echo ""
+echo -e ''
+echo -e '                         ' "\e[31mColors:\e[0m \e[30m\u2588\u2588\e[0m\e[31m\u2588\u2588\e[0m\e[32m\u2588\u2588\e[0m\e[33m\u2588\u2588\e[0m\e[34m\u2588\u2588\e[0m\e[35m\u2588\u2588\e[0m\e[36m\u2588\u2588\e[0m\e[37m\u2588\u2588\e[0m"
+echo -e ''
+echo -e ''
