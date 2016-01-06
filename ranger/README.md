@@ -1,6 +1,6 @@
 ## Ranger
 
-### Important to display image previews in Ranger
+#### Important to display image previews in Ranger:
 
 Add ```set preview_images true``` to "~/.config/ranger/rc.conf"
 
