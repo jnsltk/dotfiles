@@ -2,6 +2,8 @@
 
 Scripts and configs.
 
+Font I use: Tewi https://github.com/lucy/tewi-font
+
 ## Screenshots:
 
 ###lubuntu#01
