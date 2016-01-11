@@ -1,4 +1,4 @@
-#####Stylish Add-on
+####Stylish Add-on
 
 https://addons.mozilla.org/en-US/firefox/addon/stylish/
 
