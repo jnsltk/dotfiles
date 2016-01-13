@@ -1,168 +1,227 @@
 #!/bin/bash
  
-hc() { "${herbstclient_command[@]:-herbstclient}" "$@" ;}
+        # Layouting
+########## ARGS ##########
 monitor=${1:-0}
+ 
+########## OPTIONS ##########
+panel_height=25
+font="-*-fixed-medium-*-*-*-12-*-*-*-*-*-*-*"
+bgcolor='#ffffff'
+selbg=$(herbstclient get window_border_active_color)
+selfg='#ffffff'
+bordercolor="#666666"
+sep="^bg()^fg('#cccccc')|"
+host=$(hostname)
+ 
+net_dev="wlp1s0"
+ 
+hlwm_dir="$HOME/.config/herbstluftwm"
+icon_dir="$HOME/Pictures/dzen_icons"
+ 
+########## VARIABLES ##########
 geometry=( $(herbstclient monitor_rect "$monitor") )
 if [ -z "$geometry" ] ;then
     echo "Invalid monitor $monitor"
     exit 1
 fi
-# geometry has the format W H X Y
+# geometry has the format: WxH+X+Y
 x=${geometry[0]}
 y=${geometry[1]}
-panel_width=${geometry[2]}
-panel_height=26
-font="-*-fixed-medium-*-*-*-12-*-*-*-*-*-*-*"
-bgcolor='#eeeeee'
-selbg='#cccccc'
-selfg='#101010'
-
-####
+if [[ 0 -eq $monitor ]] && [ $host == "tidus" ]; then
+    panel_width=1366
+else
+    panel_width=${geometry[2]}
+fi
+ 
 # Try to find textwidth binary.
 # In e.g. Ubuntu, this is named dzen2-textwidth.
-if which textwidth &> /dev/null ; then
+if [ -e "$(which textwidth 2> /dev/null)" ] ; then
     textwidth="textwidth";
-elif which dzen2-textwidth &> /dev/null ; then
+elif [ -e "$(which dzen2-textwidth 2> /dev/null)" ] ; then
     textwidth="dzen2-textwidth";
 else
     echo "This script requires the textwidth tool of the dzen2 project."
     exit 1
 fi
-####
+ 
 # true if we are using the svn version of dzen2
-# depending on version/distribution, this seems to have version strings like
-# "dzen-" or "dzen-x.x.x-svn"
-if dzen2 -v 2>&1 | head -n 1 | grep -q '^dzen-\([^,]*-svn\|\),'; then
+dzen2_version=$(dzen2 -v 2>&1 | head -n 1 | cut -d , -f 1|cut -d - -f 2)
+if [ -z "$dzen2_version" ] ; then
     dzen2_svn="true"
 else
     dzen2_svn=""
 fi
  
-if awk -Wv 2>/dev/null | head -1 | grep -q '^mawk'; then
-    # mawk needs "-W interactive" to line-buffer stdout correctly
-    # http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=593504
-    uniq_linebuffered() {
-      awk -W interactive '$0 != l { print ; l=$0 ; fflush(); }' "$@"
-    }
-else
-    # other awk versions (e.g. gawk) issue a warning with "-W interactive", so
-    # we don't want to use it there.
-    uniq_linebuffered() {
-      awk '$0 != l { print ; l=$0 ; fflush(); }' "$@"
-    }
-fi
+# Functions
+function uniq_linebuffered() {
+    awk '$0 != l { print ; l=$0 ; fflush(); }' "$@"
+}
  
-hc pad $monitor $panel_height
+########## Widgets ##########
+heartbeat_event() {
+    count=0
+    while true ; do
+        echo "heartbeat ${count}"
+        count=$((${count} + 1))
+        sleep 60 || break
+    done
+}
+ 
+# ACPI
+acpi_widget() {
+    echo $(
+        acpi -b |
+        awk '{print $3 $4 $5}' |
+        sed -e 's/,/ /g' -e 's/^\([A-Z]\)[a-z]*/\1/' -e 's/:[0-9][0-9]$//'
+    )
+}
+ 
+# NETWORK
+net_widget() {
+    ip=$(
+        ip address show dev $net_dev |
+        grep "scope global" |
+        awk '{print $2}' |
+        sed 's/\/[0-9]*$//' |
+        head -n 1
+    )
+    ssid=$(
+        iwconfig $net_dev |
+        grep ESSID |
+        sed -e 's_.*ESSID:"\(.*\)"_\1_' |
+        head -n 1 |
+        awk '{print $1}'
+    )
+    echo -n "W $ip ($ssid)"
+}
+ 
+volume_widget() {
+    dzen_icons="/home/su1ts/Pictures/dzen_icons"
+    curr_volume=$(echo $volume | cut -d " " -f2)
+    if [ "$1" == "toggle" ] && [ "$curr_volume" != "Mute" ]; then
+        volume="Mute"
+        vol_icon="$dzen_icons/volume_off.xbm"
+    else
+        volume=$(amixer get Master | grep -Po '\d+\%' )
+        vol_icon="^i($dzen_icons/volume_on.xbm)"
+    fi
+    echo "^i(/home/su1ts/Picuters/dzen_icons/volume_on.xbm) V $volume"
+}
+ 
+function m() {
+    mpc -f %${1}% current | sed 's/ä/ae/g' | sed 's/ö/oe/g' | sed 's/ü/ue/g'
+}
+function nowplaying() {
+    echo -n "$(icon note1 magenta) $(m title) ^fg(#909090)by^fg() $(m artist) ^fg(#909090)on^fg() $(m album)"
+}
+ 
+ 
+########## Go! ##########
+herbstclient pad $monitor $panel_height
  
 {
-    ### Event generator ###
-    # based on different input data (mpc, date, hlwm hooks, ...) this generates events, formed like this:
-    #   <eventname>\t<data> [...]
-    # e.g.
-    #   date    ^fg(#efefef)18:33^fg(#909090) Uhr, 2013-10-^fg(#efefef)29
- 
-    #mpc idleloop player &
+    # events:
+    mpc idleloop player &
+    # Clock
     while true ; do
-        # "date" output is checked once a second, but an event is only
-        # generated if the output changed compared to the previous run.
-        date +$'date\t^fg(#cccccc)%H:%M^fg(#cccccc) Uhr, ^fg(#cccccc)%d.%m.%y'
-        sleep 1 || break
-    done > >(uniq_linebuffered) &
-    childpid=$!
-    hc --idle
-    kill $childpid
-} 2> /dev/null | {
-    IFS=$'\t' read -ra tags <<< "$(hc tag_status $monitor)"
-    visible=true
+        date +'date ^fg(#666666)%H:%M ^fg(#aaaaaa)%d.%m.%y'
+    done > >(uniq_linebuffered)  &
+    childpid1=$!
+ 
+    heartbeat_event &
+    childpid2=$!
+ 
+    # hlwm events
+    herbstclient --idle
+ 
+    kill $childpid1 $childpid2
+ 
+} | tee /dev/stderr | {
+ 
+    # Processing of events
+    TAGS=( $(herbstclient tag_status $monitor) )
     date=""
     windowtitle=""
+    acpi=$(acpi_widget)
+    ip=$(ip_widget)
+    volume=$(volume_widget)
+ 
     while true ; do
- 
-        ### Output ###
-        # This part prints dzen data based on the _previous_ data handling run,
-        # and then waits for the next event to happen.
- 
-        bordercolor="#26221C"
-        # separator="^bg()^fg(#ffffff)|"
         # draw tags
-        for i in "${tags[@]}" ; do
+        for i in "${TAGS[@]}" ; do
             case ${i:0:1} in
                 '#')
+                    # Tag is focused, and so is monitor
                     echo -n "^bg($selbg)^fg($selfg)"
                     ;;
                 '+')
+                    # Tag is focused, but monitor is not
                     echo -n "^bg(#9CA668)^fg(#141414)"
                     ;;
                 ':')
+                    # Tag is not focused, and is not empty
                     echo -n "^bg()^fg(#cccccc)"
                     ;;
                 '!')
+                    # The tag contains an urgent window
                     echo -n "^bg(#FF0675)^fg(#141414)"
                     ;;
                 *)
+                    # Otherwise
                     echo -n "^bg()^fg(#ababab)"
                     ;;
             esac
-            if [ ! -z "$dzen2_svn" ] ; then
-                # clickable tags if using SVN dzen
-                echo -n "^ca(1,\"${herbstclient_command[@]:-herbstclient}\" "
-                echo -n "focus_monitor \"$monitor\" && "
-                echo -n "\"${herbstclient_command[@]:-herbstclient}\" "
-                echo -n "use \"${i:1}\") ${i:1} ^ca()"
-            else
-                # non-clickable tags if using older dzen
+            # If tag is not empty, show it.
+            if [[ "${i:0:1}" != '.' ]]; then
+                #echo -n "^ca(1,herbstclient focus_monitor $monitor && herbstclient use ${i:1}) ${i:1} ^ca()"
                 echo -n " ${i:1} "
             fi
         done
-        echo -n "$separator"
-        echo -n "^bg()^fg() ${windowtitle//^/^^}"
+        echo -n "$sep"
+        echo -n "^bg()^fg('#666666') ${windowtitle//^/^^}"
+ 
+        # Layouting
         # small adjustments
-        right="$separator^bg() $date $separator"
-        right_text_only=$(echo -n "$right" | sed 's.\^[^(]*([^)]*)..g')
+        right="^fg('#666666') $nowplaying $volume $sep^fg('#666666') $acpi $sep^fg('#666666') $ip $sep^bg() $date"
+        right_text_only=$(echo -n "$right"|sed 's.\^[^(]*([^)]*)..g')
         # get width of right aligned text.. and add some space..
-        width=$($textwidth "$font" "$right_text_only    ")
-        echo -n "^pa($(($panel_width - $width)))$right"
+        width=$($textwidth "$font" "$right_text_only")
+        offset=14 #14 for the one icon im using that isnt counted
+        echo -n "^pa($(($panel_width - $width - $offset)))$right"
+ 
+        # Finish output
         echo
  
-        ### Data handling ###
-        # This part handles the events generated in the event loop, and sets
-        # internal variables based on them. The event and its arguments are
-        # read into the array cmd, then action is taken depending on the event
-        # name.
-        # "Special" events (quit_panel/togglehidepanel/reload) are also handled
-        # here.
- 
         # wait for next event
-        IFS=$'\t' read -ra cmd || break
+        read line || break
+        cmd=( $line )
         # find out event origin
+        echo "Command: ${cmd[0]}" >&2
         case "${cmd[0]}" in
             tag*)
-                #echo "resetting tags" >&2
-                IFS=$'\t' read -ra tags <<< "$(hc tag_status $monitor)"
+                #echo "reseting tags" >&2
+                TAGS=( $(herbstclient tag_status $monitor) )
                 ;;
             date)
-                #echo "resetting date" >&2
+                #echo "reseting date" >&2
                 date="${cmd[@]:1}"
+                ;;
+            heartbeat)
+                echo "Got heartbeat!" >&2
+                ip=$(net_widget)
+                acpi=$(acpi_widget)
+                ;;
+            volume)
+                echo "Got volume update!" >&2
+                volume=$(volume_widget)
+                ;;
+            volume_toggle)
+                echo "Got volume update!" >&2
+                volume=$(volume_widget toggle)
                 ;;
             quit_panel)
                 exit
-                ;;
-            togglehidepanel)
-                currentmonidx=$(hc list_monitors | sed -n '/\[FOCUS\]$/s/:.*//p')
-                if [ "${cmd[1]}" -ne "$monitor" ] ; then
-                    continue
-                fi
-                if [ "${cmd[1]}" = "current" ] && [ "$currentmonidx" -ne "$monitor" ] ; then
-                    continue
-                fi
-                echo "^togglehide()"
-                if $visible ; then
-                    visible=false
-                    hc pad $monitor 0
-                else
-                    visible=true
-                    hc pad $monitor $panel_height
-                fi
                 ;;
             reload)
                 exit
@@ -170,15 +229,9 @@ hc pad $monitor $panel_height
             focus_changed|window_title_changed)
                 windowtitle="${cmd[@]:2}"
                 ;;
-            #player)
-            #    ;;
+            *)
+                echo "Unknown event!" >&2
         esac
-    done
- 
-    ### dzen2 ###
-    # After the data is gathered and processed, the output of the previous block
-    # gets piped to dzen2.
- 
-} 2> /dev/null | dzen2 -w $panel_width -x $x -y $y -fn "$font" -h $panel_height \
-    -e 'button3=;button4=exec:herbstclient use_index -1;button5=exec:herbstclient use_index +1' \
+        done
+} | dzen2 -w $panel_width -x $x -y $y -fn "$font" -h $panel_height \
     -ta l -bg "$bgcolor" -fg '#efefef'
