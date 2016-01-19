@@ -1,5 +1,5 @@
 #!/bin/bash
-# primitive script to display some rice info
+# primitive script to display some device info
  
 hostname=$(hostname)
 username=$(id -un)
