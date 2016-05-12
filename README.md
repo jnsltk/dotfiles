@@ -1,6 +1,6 @@
 # dotfiles
 
-Scripts and configs.
+Scripts and configs for GNU/Linux.
 
 **Font I use:** Tewi https://github.com/lucy/tewi-font
 
