@@ -3,6 +3,7 @@
 Scripts and configs for GNU/Linux.
 
 **Fonts I use:** 
+
 Tewi https://github.com/lucy/tewi-font
 
 ## Screenshots:
