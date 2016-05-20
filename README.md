@@ -4,7 +4,9 @@ Scripts and configs for GNU/Linux.
 
 ## Fonts I use:
 
-Tewi https://github.com/lucy/tewi-font
+<ul>
+<li>Tewi https://github.com/lucy/tewi-font</li>
+</ul>
 
 ## Screenshots:
 
