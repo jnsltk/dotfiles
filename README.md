@@ -2,7 +2,7 @@
 
 Scripts and configs for GNU/Linux.
 
-**Fonts I use:** 
+## Fonts I use:
 
 Tewi https://github.com/lucy/tewi-font
 
