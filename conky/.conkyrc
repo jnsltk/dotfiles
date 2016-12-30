@@ -1,0 +1,65 @@
+# conky configuration
+#
+# The list of variables has been removed from this file in favour
+# of keeping the documentation more maintainable.
+# Check http://conky.sf.net for an up-to-date-list.
+#
+# For ideas about how to modify conky, please see:
+# http://conky.sourceforge.net/variables.html
+#
+# For help with conky, please see:
+# http://conky.sourceforge.net/documentation.html
+#
+# Enjoy! :)
+##############################################
+# Settings
+##############################################
+background no
+use_xft yes
+font tewi:size=9
+#border_inner_margin 20
+#boder_margin 20
+border_outer_margin 5
+xftalpha 1
+update_interval 1.5
+total_run_times 0
+own_window yes
+own_window_transparent no
+own_window_colour 121417
+own_window_type desktop
+own_window_argb_visual yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+double_buffer yes
+minimum_size 738
+maximum_width 758
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+default_color 444444
+#default_shade_color 000000
+#default_outline_color 828282
+alignment top_right
+gap_x 0
+gap_y 9
+color1 999999
+no_buffers yes
+uppercase no
+cpu_avg_samples 2
+override_utf8_locale yes
+##############################################
+#  Output
+#${goto 120}${color1}hdd:${color} ${fs_used /}/${fs_size /}\
+#${color1}lan:${color} ↓${downspeedf wlan0} kiB/s ↑${upspeedf wlan0} kiB/s\
+#${alignr}${color1}ext ip:${color} ${exec curl -s www.icanhazip.com} \
+#${alignr}${color1}io:${color} ${diskio} // \
+##############################################
+TEXT
+${alignr}${color f5edce}${voffset -1}${font FontAwesome:size=9}${font} ${voffset -1}${color1}${cpu cpu0}%${color} // \
+${alignr}${color b1d1b3}${voffset -1}${font FontAwesome:size=9}${font} ${voffset -1}${color1}${memperc}%${color} // \
+${alignr}${color b46565}${voffset -1}${font FontAwesome:size=9}${font} ${voffset -1}${color1}${hwmon 1 temp 2}C${color} // \
+${alignr}${color 9fc2c5}${voffset -1}${font FontAwesome:size=9}${font} ${voffset -1}${color1}${wireless_essid wlan0}${color} // \
+${alignr}${color bea492}${voffset -1}${font FontAwesome:size=9}${font} ${voffset -1}${color1}${downspeedf wlan0}${color}${offset 1}k ${voffset -1}${color bea492}${font FontAwesome:size=9}${font} ${voffset -1}${color1}${upspeedf wlan0}${color}${offset 1}k // \
+${alignr}${color 9ab9c8}${voffset -1}${font FontAwesome:size=9}${font} ${voffset -1}${color1}${execi 300 /usr/local/bin/weather.sh "EUR|DE|Stein-Neukirch"}${color} // \
+${alignr}${color 787878}${voffset -1}${font FontAwesome:size=9}${font} ${voffset -1}${color1}${time %H}:${time %M}${color}\
+${alignr}         \
