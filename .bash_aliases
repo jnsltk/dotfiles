@@ -22,7 +22,7 @@ alias root='sudo -i'
 # List paths
 alias path='echo -e ${PATH//:/\\n}'
  
-#Network
+# Network
 alias ping1='ping -c 4 www.google.com'
 alias ping2='ping -c 4 192.168.2.1'
 alias mac='ifconfig | grep HWaddr'
@@ -39,6 +39,15 @@ alias nano='nano -w'
  
 # Disk free in human terms
 alias df='df -h'
+
+# tty-clock
+alias tty-clock='tty-clock -s -S -b -c -C 7 -t'
+alias clock='tty-clock -s -S -b -c -C 2 -t'
+
+# Others 
+alias cls='clear'
+alias gay='toilet -f mono12 -F gay'
+alias dots='pipes -t 2'
  
 # Moving directories
 alias ..='cd ..'
