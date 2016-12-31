@@ -3,7 +3,7 @@
 # ---------------
  
 # Scrot
-alias scrot='scrot ~/Pictures/scrots/scrot_%b%d-%H%M%S.png"'
+#alias scrot='scrot ~/scrot_%b%d-%H%M%S.png"'
  
 # Restart Wifi
 alias recinet='sudo service network-manager restart; echo -e "└ Restarted Network Manager \e[31mService\e[0m | "'
