@@ -1,6 +1,6 @@
 # dotfiles
 
-:rice: Config files for my Linux desktops.
+Config files for my Linux desktops :rice:
 
 ## Programs I use:
 
