@@ -1,6 +1,16 @@
 # dotfiles
 
-Scripts and configs for GNU/Linux.
+:rice: Config files for my Linux desktops.
+
+## Programs I use:
+
+<ul>
+<li>**Terminal emulator:** urxvt
+  <ul>
+  <li><a href="urxvt/.Xdefaults">Config</a></li>
+  </ul>
+  </li>
+</ul>
 
 ## Fonts I use:
 
