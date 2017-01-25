@@ -2,6 +2,7 @@
 
 Config files for my Linux desktops.
 
+
 ## Programs I use:
 
 <ul>
@@ -10,7 +11,6 @@ Config files for my Linux desktops.
       <li><a href="urxvt/.Xdefaults">Config file</a></li>
     </ul>
  </li>
- <li> </li>
  <li><b>File manager:</b> <a href="https://wiki.archlinux.org/index.php/ranger">ranger</a>
     <ul>
       <li><a href="ranger/rc.conf">Config file</a></li>
@@ -18,11 +18,13 @@ Config files for my Linux desktops.
  </li>
 </ul>
 
+
 ## Fonts I use:
 
 <ul>
 <li>Tewi https://github.com/lucy/tewi-font</li>
 </ul>
+
 
 ## Screenshots:
 
