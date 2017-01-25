@@ -7,7 +7,7 @@ Config files for my Linux desktops.
 <ul>
 <li>**Terminal emulator:** urxvt
   <ul>
-  <li><a href="urxvt/.Xdefaults">Config</a></li>
+  <li><a href="urxvt/.Xdefaults">Config file</a></li>
   </ul>
   </li>
 </ul>
