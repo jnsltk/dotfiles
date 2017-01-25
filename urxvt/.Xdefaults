@@ -1,35 +1,49 @@
-
+!░░█ Window Settings
 URxvt*scrollBar: false
-URxvt*background: #162933
-URxvt*foreground: #eeeeee
+
+!░░█ Font
 URxvt*font: xft:tewi-medium:pixelsize=12
 URxvt*boldFont: xft:tewi-medium:pixelsize=12
+
+!░░█ Font settings
 !URxvt*letterSpace: -1
 !URxvt*depth: 32
 !URxvt*antialias: false
+
+!░░█ Clickable links
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+
+!░░█ Colors
+URxvt*background: #162933
+URxvt*foreground: #eeeeee
 URxvt*cursorColor: #bea492
 
-! black
-URxvt*color0: #787878
+!░█ First color = bright tone
+!░█ Second color = dark tone
+
+!░█ Black
+URxvt*color0: #787878 
 URxvt*color8: #414141
-! red
+!░█ Red
 URxvt*color1: #bea492
 URxvt*color9: #b46565
-! green
+!░█ Green
 URxvt*color2: #b1d1b3
 URxvt*color10: #93bb95
-! yellow
+!░█ Yellow
 URxvt*color3: #f5edce
 URxvt*color11: #f4e7b1
-! blue
+!░█ Blue
 URxvt*color4: #9fc2c5
 URxvt*color12: #6c9b9f
-! magenta
+!░█ Magenta
 URxvt*color5: #e8c6d2
 URxvt*color13: #e193ae
-! cyan
+!░█ Cyan
 URxvt*color6: #c6d4db
 URxvt*color14: #9ab9c8
-! white
+!░█ White
 URxvt*color7: #eeeeec
 URxvt*color15: #d3d7cf
