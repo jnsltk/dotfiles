@@ -5,7 +5,7 @@ Config files for my Linux desktops.
 ## Programs I use:
 
 <ul>
-<li>*Terminal emulator:* urxvt
+<li><b>Terminal emulator:</b> urxvt [rxvt-unicode](https://wiki.archlinux.org/index.php/Rxvt-unicode)
   <ul>
   <li><a href="urxvt/.Xdefaults">Config file</a></li>
   </ul>
