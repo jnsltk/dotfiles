@@ -2,6 +2,16 @@
 
 Config files for my Linux desktops.
 
+`
+ncmpcpp       >   ncmpcpp config and mpd.conf
+conky         >   conkyrc
+firefox       >   Stylish CSS for Firefox
+herblustftwm  >   autostart file and panel.sh
+openbox       >   autostart file, menu.xml, rc.xml and modified theme files
+ranger        >   rc.conf with basically one edited line
+tint2         >   tint2rc
+urxvt         >   .Xdefaults
+`
 
 ## Programs I use:
 
@@ -52,7 +62,7 @@ Config files for my Linux desktops.
 
 <img src="https://my.mixtape.moe/hjevtj.png" alt="Debian desktop" title="Debian desktop" />
 
-### lubuntu // herbstluftwm with i3bar
+### lubuntu // herbstluftwm
 <ul>
   <li><a href="herbstluftwm/">herblustfwm config files</a></li>
   <li><a href="firefox/firefox-css-twily">Firefox css for Stylish add-on</a></li>
