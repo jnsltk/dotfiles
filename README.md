@@ -11,12 +11,12 @@ Config files for my Linux desktops.
       <li><a href="openbox/">Config files</a></li>
     </ul>
  </li>
- <li><b>Taskbar:</b> <a href="https://wiki.archlinux.org/index.php/tint2">tint2</a> &amp; <a href="https://wiki.archlinux.org/index.php/conky">conky</a>
+ <li><b>Taskbar:</b> <a href="https://wiki.archlinux.org/index.php/tint2">tint2</a></li>
    <ul>
     <li><a href="tint2/">Config file</a></li>
    </ul>
  </li>
-  <li><b>Taskbar ii:</b> <a href="https://wiki.archlinux.org/index.php/tint2">tint2</a> &amp; <a href="https://wiki.archlinux.org/index.php/conky">conky</a>
+  <li><b>Taskbar statistics:</b> <a href="https://wiki.archlinux.org/index.php/conky">conky</a></li>
    <ul>
      <li><a href="conky/">Config file</a></li>
    </ul>
