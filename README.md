@@ -2,18 +2,21 @@
 
 Config files for my Linux desktops.
 
-`
-ncmpcpp       >   ncmpcpp config and mpd.conf
+`ncmpcpp       >   ncmpcpp config and mpd.conf
 
 conky         >   conkyrc
 
 firefox       >   Stylish CSS for Firefox
+
 herblustftwm  >   autostart file and panel.sh
+
 openbox       >   autostart file, menu.xml, rc.xml and modified theme files
+
 ranger        >   rc.conf with basically one edited line
+
 tint2         >   tint2rc
-urxvt         >   .Xdefaults
-`
+
+urxvt         >   .Xdefaults`
 
 ## Programs I use:
 
