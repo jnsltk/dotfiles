@@ -23,8 +23,8 @@ own_window_type desktop
 own_window_argb_visual yes
 own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
 double_buffer yes
-minimum_size 738
-maximum_width 758
+minimum_size 1360
+maximum_width 1366
 draw_shades no
 draw_outline no
 draw_borders no
