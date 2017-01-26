@@ -11,6 +11,11 @@ Config files for my Linux desktops.
       <li><a href="openbox/">Config files</a></li>
     </ul>
  </li>
+ <li><b>Taskbar:</b> <a href="https://wiki.archlinux.org/index.php/tint2">tint2</a> &amp; <a href="https://wiki.archlinux.org/index.php/conky">conky</a>
+   <ul>
+     <li><a href="tint2/">tint2rc</a> &amp; <a href="conky/">.conkyrc</a></li>
+   </ul>
+ </li>
   <li><b>Terminal emulator:</b> <a href="https://wiki.archlinux.org/index.php/Rxvt-unicode">rxvt-unicode</a>
     <ul>
       <li><a href="urxvt/.Xdefaults">Config file</a></li>
