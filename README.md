@@ -3,8 +3,6 @@
 Config files for my Linux desktops.
 
 ```
-Last updated in 2017
-
 conky         >   conkyrc
 firefox       >   Stylish CSS for Firefox
 herblustftwm  >   autostart file and panel.sh
