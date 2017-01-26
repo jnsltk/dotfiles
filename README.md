@@ -48,9 +48,13 @@ Config files for my Linux desktops.
 
 ## Screenshots:
 
-### lubuntu // herbstluftwm // i3bar
+### Debian // OpenBox // tint2 // conky
+
+<img src="https://my.mixtape.moe/mkeycb.png" alt="Debian desktop" title="Debian desktop" />
+
+### lubuntu // herbstluftwm with i3bar
 <ul>
   <li><a href="herbstluftwm/">herblustfwm config files</a></li>
   <li><a href="firefox/firefox-css-twily">Firefox css for Stylish add-on</a></li>
 </ul>
-<img src="http://i.imgur.com/hmFUCjn.png" />
+<img src="https://my.mixtape.moe/etclbu.png" alt="Old desktop" title="Old desktop" />
