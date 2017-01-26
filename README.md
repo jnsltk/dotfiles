@@ -31,6 +31,12 @@ Config files for my Linux desktops.
       <li><a href="ranger/rc.conf">Config file</a></li>
     </ul>
  </li>
+ <li><b>Web browser:</b> <a href="https://wiki.archlinux.org/index.php/Firefox">Firefox</a>
+    <ul>
+      <li>Add-ons I use: Stylish, uBlock origin, HTTPS everywhere, NoScript</li>
+      <li><a href="firefox/firefox-css-twily">Firefox css for Stylish</a></li>
+    </ul>
+ </li>
 </ul>
 
 
