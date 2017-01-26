@@ -3,6 +3,8 @@
 Config files for my Linux desktops.
 
 ```
+Last updated in 2017
+
 conky         >   conkyrc
 firefox       >   Stylish CSS for Firefox
 herblustftwm  >   autostart file and panel.sh
@@ -55,12 +57,14 @@ urxvt         >   .Xdefaults
   <li>Tewi https://github.com/lucy/tewi-font</li>
 </ul>
 
-
-## Screenshots:
+## Current desktop:
 
 ### Debian // OpenBox // tint2 // conky
 
 <img src="https://my.mixtape.moe/hjevtj.png" alt="Debian desktop" title="Debian desktop" />
+
+
+## Old screenshots:
 
 ### lubuntu // herbstluftwm
 <ul>
