@@ -43,11 +43,13 @@ Config files for my Linux desktops.
 ## Fonts I use:
 
 <ul>
-<li>Tewi https://github.com/lucy/tewi-font</li>
+  <li>Tewi https://github.com/lucy/tewi-font</li>
 </ul>
 
 
 ## Screenshots:
 
-###lubuntu#01
+### lubuntu + i3
+
+
 <img src="http://i.imgur.com/hmFUCjn.png" />
