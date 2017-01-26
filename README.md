@@ -50,7 +50,7 @@ Config files for my Linux desktops.
 
 ### Debian // OpenBox // tint2 // conky
 
-<img src="https://my.mixtape.moe/mkeycb.png" alt="Debian desktop" title="Debian desktop" />
+<img src="https://my.mixtape.moe/hjevtj.png" alt="Debian desktop" title="Debian desktop" />
 
 ### lubuntu // herbstluftwm with i3bar
 <ul>
