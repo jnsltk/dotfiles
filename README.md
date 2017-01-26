@@ -33,8 +33,7 @@ Config files for my Linux desktops.
  </li>
  <li><b>Web browser:</b> <a href="https://wiki.archlinux.org/index.php/Firefox">Firefox</a>
     <ul>
-      <li>Add-ons I use: Stylish, uBlock origin, HTTPS everywhere, NoScript</li>
-      <li><a href="firefox/firefox-css-twily">Firefox css for Stylish</a></li>
+    <li><b>Add-ons I use:</b> uBlock origin, HTTPS everywhere, NoScript</li>
     </ul>
  </li>
 </ul>
@@ -49,7 +48,9 @@ Config files for my Linux desktops.
 
 ## Screenshots:
 
-### lubuntu + i3
-
-
+### lubuntu // herbstluftwm // i3bar
+<ul>
+  <li><a href="herbstluftwm/">herblustfwm config files</a></li>
+  <li><a href="firefox/firefox-css-twily">Firefox css for Stylish add-on</a></li>
+</ul>
 <img src="http://i.imgur.com/hmFUCjn.png" />
