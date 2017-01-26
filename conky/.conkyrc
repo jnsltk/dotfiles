@@ -58,6 +58,6 @@ ${alignr}${color3}⯍ ${color 9fc2c5}${cpu cpu0}%${color}  \
 ${alignr}${color3}┉ ${color 9fc2c5}${memperc}%${color}  \
 ${alignr}${color3}⬙ ${color 9fc2c5}${hwmon 1 temp 2}C${color}  \
 ${alignr}${color2}⯎ ${color e8c6d2}${wireless_essid wlan0}${color}  \
-${alignr}${color2}⭫ ${color e8c6d2}${downspeedf wlan0}${color}${color2}k${color}  ${color2}⭭ ${color e8c6d2}${upspeedf wlan0}${color}${color2}k${color}  \
+${alignr}${color2}⭭ ${color e8c6d2}${downspeedf wlan0}${color}${color2}k${color}  ${color2}⭫ ${color e8c6d2}${upspeedf wlan0}${color}${color2}k${color}  \
 ${alignr}${color5}☁ ${color f5edce}${execi 300 /usr/local/bin/weather.sh "EUR|DE|Stein-Neukirch"}${color}  \
 ${alignr}${color5}⬞ ${color f5edce}${time %H}:${time %M}${color}  \
