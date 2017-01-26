@@ -2,6 +2,6 @@
 
 https://wiki.archlinux.org/index.php/conky
 
-I tend to use conky as part of taskbar and show info like current weather, time and CPU/Memory stats.
+I tend to use conky together with tint2 as taskbar to show CPU%, MEM%, core temperature, connected Wi-fi, network upload rate, network download rate, weather (https://bbs.archlinux.org/viewtopic.php?id=37381), date and time.
 
-<img src="https://my.mixtape.moe/fkakug.png" />
+![conky example](https://my.mixtape.moe/fkakug.png)
