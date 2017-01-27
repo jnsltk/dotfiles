@@ -41,17 +41,14 @@ color3 6c9b9f
 color4 4A5860
 color5 f4e7b1
 color6 6c9b9f
-RED=\033[0;31m
 no_buffers yes
 uppercase no
 cpu_avg_samples 2
 override_utf8_locale yes
 ##############################################
-#${goto 120}${color1}hdd:${color} ${fs_used /}/${fs_size /}\
-#${color1}lan:${color} ↓${downspeedf wlan0} kiB/s ↑${upspeedf wlan0} kiB/s\
-#${alignr}${color1}ext ip:${color} ${exec curl -s www.icanhazip.com} \
-#${color6}║${color}
-#${alignr}${color1}io:${color} ${diskio} // \
+#hdd: ${fs_used /}/${fs_size /}
+#ext ip ${exec curl -s www.icanhazip.com}
+#io: ${diskio}
 ##############################################
 TEXT
 ${alignr}${color3}⯍ ${color 9fc2c5}${cpu cpu0}%${color}  \
@@ -59,5 +56,5 @@ ${alignr}${color3}┉ ${color 9fc2c5}${memperc}%${color}  \
 ${alignr}${color3}⬙ ${color 9fc2c5}${hwmon 1 temp 2}C${color}  \
 ${alignr}${color2}⯎ ${color e8c6d2}${wireless_essid wlan0}${color}  \
 ${alignr}${color2}⭭ ${color e8c6d2}${downspeedf wlan0}${color}${color2}k${color}  ${color2}⭫ ${color e8c6d2}${upspeedf wlan0}${color}${color2}k${color}  \
-${alignr}${color5}☁ ${color f5edce}${execi 300 /usr/local/bin/weather.sh "EUR|DE|Stein-Neukirch"}${color}  \
+${alignr}${color5}☁ ${color f5edce}${execi 300 /usr/local/bin/weather.sh "EUR|DE|Siegen"}${color}  \
 ${alignr}${color5}⬞ ${color f5edce}${time %H}:${time %M}${color}  \
