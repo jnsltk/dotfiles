@@ -46,9 +46,9 @@ uppercase no
 cpu_avg_samples 2
 override_utf8_locale yes
 ##############################################
-#hdd: ${fs_used /}/${fs_size /}
-#ext ip ${exec curl -s www.icanhazip.com}
-#io: ${diskio}
+# hdd: ${fs_used /}/${fs_size /}
+# ext ip ${exec curl -s www.icanhazip.com}
+# io: ${diskio}
 ##############################################
 TEXT
 ${alignr}${color3}⯍ ${color 9fc2c5}${cpu cpu0}%${color}  \
