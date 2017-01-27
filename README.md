@@ -57,14 +57,14 @@ urxvt          |   .Xdefaults
 
 ## Current desktop:
 
-### Debian // OpenBox // tint2 // conky
+### OpenBox // tint2 // conky
 
 <img src="https://my.mixtape.moe/hjevtj.png" alt="Debian desktop" title="Debian desktop" />
 
 
 ## Old screenshots:
 
-### lubuntu // herbstluftwm
+### herbstluftwm
 <ul>
   <li><a href="herbstluftwm/">herblustfwm config files</a></li>
   <li><a href="firefox/firefox-css-twily">Firefox css for Stylish add-on</a></li>
