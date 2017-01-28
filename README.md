@@ -69,4 +69,3 @@ urxvt          |   .Xdefaults
   <li><a href="herbstluftwm/">herblustfwm config files</a></li>
   <li><a href="firefox/firefox-css-twily">Firefox css for Stylish add-on</a></li>
 </ul>
-![Old lubuntu desktop](https://my.mixtape.moe/etclbu.png)
