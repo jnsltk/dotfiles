@@ -62,7 +62,7 @@ urxvt          |   .Xdefaults
 <img src="https://my.mixtape.moe/hjevtj.png" alt="Debian desktop" title="Debian desktop" />
 
 
-## Old screenshots:
+## Old desktops:
 
 ### herbstluftwm
 <ul>
