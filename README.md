@@ -47,6 +47,16 @@ Config files for my Linux desktops. Belong into home directory ``~``.
       <li><a href="ranger/rc.conf">Config file</a></li>
     </ul>
  </li>
+ <li><b>Music playback:</b> <a href="https://wiki.archlinux.org/index.php/mpd">MPD</a>
+    <ul>
+      <li><a href="mpd/.mpdconf">Config file</a></li>
+    </ul>
+ </li>
+ <li><b>Music management:</b> <a href="https://wiki.archlinux.org/index.php/ncmpcpp">ncmpcpp</a>
+    <ul>
+      <li><a href="ncmpcpp/config">Config file</a></li>
+    </ul>
+ </li>
  <li><b>Web browser:</b> <a href="https://wiki.archlinux.org/index.php/Firefox">Firefox</a>
     <ul>
     <li><b>Add-ons I use:</b> uBlock origin, HTTPS everywhere, NoScript</li>
@@ -56,10 +66,12 @@ Config files for my Linux desktops. Belong into home directory ``~``.
 </ul>
 
 
-## Fonts I use:
+## Other programs and fonts:
 
 <ul>
-  <li>Tewi https://github.com/lucy/tewi-font</li>
+<li><b>Font:</b> <a href="https://github.com/lucy/tewi-font">Tewi</a></li>
+<li><b>Image viewing:</b> <a href="https://wiki.archlinux.org/index.php/feh">feh</a></li>
+<li><b>PDF viewing:</b> <a href="https://mupdf.com/">MuPDF</a></li>
 </ul>
 
 ## Current desktop:
