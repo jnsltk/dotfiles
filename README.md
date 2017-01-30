@@ -9,9 +9,11 @@ Config files for my Linux desktops. Belong into home directory ``~``.
   conky          │   conkyrc
   firefox        │   Stylish CSS for Firefox
   herblustftwm   │   autostart file and panel.sh
-  ncmpcpp        │   ncmpcpp config and mpd.conf
+  mpd            │   mpd config file
+  ncmpcpp        │   ncmpcpp config file
   openbox        │   autostart file, menu.xml, rc.xml and theme files
   ranger         │   rc.conf with basically one edited line
+  terminal       │   .bash_aliases
   tint2          │   tint2rc
   urxvt          │   .Xdefaults
   
@@ -47,7 +49,8 @@ Config files for my Linux desktops. Belong into home directory ``~``.
  </li>
  <li><b>Web browser:</b> <a href="https://wiki.archlinux.org/index.php/Firefox">Firefox</a>
     <ul>
-    <li><b>Add-ons I use:</b> uBlock origin, HTTPS everywhere, NoScript, Search engine: Startpage HTTPS</li>
+    <li><b>Add-ons I use:</b> uBlock origin, HTTPS everywhere, NoScript</li>
+    <li><b>Search engine:</b> Startpage HTTPS</li>
     </ul>
  </li>
 </ul>
