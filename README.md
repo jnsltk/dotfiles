@@ -70,8 +70,8 @@ Config files for my Linux desktops. Belong into home directory ``~``.
 
 <ul>
 <li><b>Font:</b> <a href="https://github.com/lucy/tewi-font">Tewi</a></li>
-<li><b>Image viewing:</b> <a href="https://wiki.archlinux.org/index.php/feh">feh</a></li>
-<li><b>PDF viewing:</b> <a href="https://mupdf.com/">MuPDF</a></li>
+<li><b>Image viewer:</b> <a href="https://wiki.archlinux.org/index.php/feh">feh</a></li>
+<li><b>PDF reader:</b> <a href="https://mupdf.com/">MuPDF</a></li>
 </ul>
 
 ## Current desktop:
