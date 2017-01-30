@@ -66,12 +66,18 @@ Config files for my Linux desktops. Belong into home directory ``~``.
 </ul>
 
 
-## Other programs and fonts:
+## Other programs:
+
+<ul>
+<li><b>Image viewer:</b> <a href="https://wiki.archlinux.org/index.php/feh">feh</a></li>
+<li><b>PDF reader:</b> <a href="https://mupdf.com/">MuPDF</a></li>
+<li><b>YouTube downlaoder:</b> <a href="https://rg3.github.io/youtube-dl/">youtube-dl</a></li>
+</ul>
+
+## Fonts:
 
 <ul>
 <li><b>Font:</b> <a href="https://github.com/lucy/tewi-font">Tewi</a></li>
-<li><b>Image viewer:</b> <a href="https://wiki.archlinux.org/index.php/feh">feh</a></li>
-<li><b>PDF reader:</b> <a href="https://mupdf.com/">MuPDF</a></li>
 </ul>
 
 ## Current desktop:
