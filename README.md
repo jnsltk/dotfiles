@@ -1,6 +1,6 @@
 # dotfiles
 
-Config files for my Linux desktops.
+Config files for my Linux desktops. .files belong into home directory ``~``.
 
 ```
 
