@@ -4,7 +4,7 @@ Config files for my Linux desktops. Belong into home directory ``~``.
 
 ```
 
-  Folder             Contents
+  Folder              Contents
   ────────────────┬───────────────────────────────────────────────────
   conky           │   conkyrc
   firefox         │   Stylish CSS for Firefox
