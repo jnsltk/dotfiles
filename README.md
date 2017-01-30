@@ -10,7 +10,7 @@ Config files for my Linux desktops.
   firefox        │   Stylish CSS for Firefox
   herblustftwm   │   autostart file and panel.sh
   ncmpcpp        │   ncmpcpp config and mpd.conf
-  openbox        │   autostart file, menu.xml, rc.xml and modified theme files
+  openbox        │   autostart file, menu.xml, rc.xml and theme files
   ranger         │   rc.conf with basically one edited line
   tint2          │   tint2rc
   urxvt          │   .Xdefaults
