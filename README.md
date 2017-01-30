@@ -5,17 +5,17 @@ Config files for my Linux desktops. Belong into home directory ``~``.
 ```
 
   Folder             Contents
-  ───────────────┬───────────────
-  conky          │   conkyrc
-  firefox        │   Stylish CSS for Firefox
-  herblustftwm   │   autostart file and panel.sh
-  mpd            │   mpd config file
-  ncmpcpp        │   ncmpcpp config file
-  openbox        │   autostart file, menu.xml, rc.xml and theme files
-  ranger         │   rc.conf with basically one edited line
-  terminal       │   .bash_aliases
-  tint2          │   tint2rc
-  urxvt          │   .Xdefaults
+  ────────────────┬───────────────────────────────────────────────────
+  conky           │   conkyrc
+  firefox         │   Stylish CSS for Firefox
+  herblustftwm    │   autostart file and panel.sh
+  mpd             │   mpd config file
+  ncmpcpp         │   ncmpcpp config file
+  openbox         │   autostart file, menu.xml, rc.xml and theme files
+  ranger          │   rc.conf with basically one edited line
+  terminal/bash   │   .bash_aliases
+  tint2           │   tint2rc
+  urxvt           │   .Xdefaults
   
 ```
 
