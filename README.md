@@ -14,6 +14,7 @@ Config files for my Linux desktops. Belong into home directory ``~``.
   openbox         │   autostart file, menu.xml, rc.xml and theme files
   ranger          │   rc.conf with basically one edited line
   terminal/bash   │   .bash_aliases
+  tmux            │   .tmux.conf
   tint2           │   tint2rc
   urxvt           │   .Xdefaults
   
