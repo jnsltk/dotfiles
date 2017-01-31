@@ -6,7 +6,7 @@ Config files for my Linux desktops. Belong into home directory ``~``.
 
   Folder              Contents
   ────────────────┬───────────────────────────────────────────────────
-  conky           │   conkyrc
+  conky           │   .conkyrc
   firefox         │   Stylish CSS for Firefox
   herblustftwm    │   autostart file and panel.sh
   mpd             │   mpd config file
@@ -14,8 +14,8 @@ Config files for my Linux desktops. Belong into home directory ``~``.
   openbox         │   autostart file, menu.xml, rc.xml and theme files
   ranger          │   rc.conf with basically one edited line
   terminal/bash   │   .bash_aliases
-  tmux            │   .tmux.conf
   tint2           │   tint2rc
+  tmux            │   .tmux.conf
   urxvt           │   .Xdefaults
   
 ```
