@@ -1,7 +1,3 @@
 ## Ranger
 
-#### Important to display image previews in Ranger:
-
-Add ```set preview_images true``` to "~/.config/ranger/rc.conf"
-
-Eventually add ```set preview_images_method urxvt``` as well.
+Run ``ranger --copy-config=all`` to copy config files to ``~/.config/ranger``. Ranger loads both config files, so you only need to add changes in your dotfile.
