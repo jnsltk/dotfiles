@@ -3,7 +3,6 @@
 "Start Vundle
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-"
 filetype off
 syntax on
 set number
@@ -29,34 +28,32 @@ let g:airline_theme='base16color'
 "░▒▓█ Colors
 hi LineNr ctermfg=darkblue
 hi VertSplit ctermfg=8
-"colorscheme elflord
+"colorscheme chocolate
 "░▒▓█ indentLine
-"let g:indentLine_color_term = 234
+let g:indentLine_color_term=8
 let g:indentLine_char='┆'
+"let g:indentLine_color_term = 234
 "let g:indentLine_setColors = 0
 "let g:indentLine_setConceal = 1
 "let g:indentLine_color_dark = 1
 "let g:indentLine_color_tty_light = 7
-let g:indentLine_color_term=8
-"░▒▓█ Chars
+"░▒▓█ Listchars
 set fillchars+=vert:\ 
 set list listchars=eol:¬,trail:·,tab:•\ ,extends:»,precedes:«
 "░▒▓█ Indentation settings
-"set textwidth=80
-"set colorcolumn=80
-" Tab size in spaces
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
+"set textwidth=80
+"set colorcolumn=80
 "set smarttab
 "set smartindent
 "░▒▓█ Keybinds
 autocmd VimEnter * AirlineToggleWhitespace
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
-" close nerdtree when its the last buffer
+"Close Nerdtree when its the last buffer
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-"
+"End Vundle
 call vundle#end()
-"END VUNDLE
