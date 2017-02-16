@@ -49,7 +49,7 @@ set expandtab
 "set colorcolumn=80
 "set smarttab
 "set smartindent
-"░▒▓█ Keybinds
+"░▒▓█ Auto commands
 autocmd VimEnter * AirlineToggleWhitespace
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
