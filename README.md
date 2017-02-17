@@ -28,7 +28,7 @@ Config files for GNU/Linux desktops. Belong into home directory ``~``.
 
 #### Window manager
 - **OpenboxWM** https://github.com/danakj/openbox  
-Floating window manager.
+Floating window manager. IMO best with titlebars for laptops and using your device with one hand ( ͡° ͜ʖ ͡°)
 
 #### Taskbar
 - **tint2** https://github.com/chazmcgarvey/tint2  
