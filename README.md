@@ -27,42 +27,41 @@ Config files for GNU/Linux desktops. Belong into home directory ``~``.
 ![Desktop scrot](https://my.mixtape.moe/syeazw.png)
 
 #### Window manager
-- **OpenBox** https://wiki.archlinux.org/index.php/openbox  
+- **OpenboxWM** https://github.com/danakj/openbox  
 Floating window manager.
 
 #### Taskbar
-- **tint2** https://wiki.archlinux.org/index.php/tint2  
+- **tint2** https://github.com/chazmcgarvey/tint2  
 Display open windows and workspaces.
-- **conky** https://wiki.archlinux.org/index.php/conky  
+- **conky** https://github.com/brndnmtthws/conky  
 Display some system and program stats + weather script.
 
 #### Terminal
-- **urxvt** 
-- **zsh**  
-With oh-my-zsh.
-- **tmux**  
+- **urxvt** https://github.com/exg/rxvt-unicode
+- **zsh/oh-my-zsh** https://github.com/robbyrussell/oh-my-zsh
+- **tmux** https://github.com/tmux/tmux
 
-#### Code editor
-- **vim**
+#### Text editor
+- **vim** https://github.com/vim/vim
 
 #### File manager
-- **ranger**
+- **ranger** https://github.com/ranger/ranger
 
 #### Music management
 - **MPD**
 - **ncmpcpp**
 
 #### File viewer
-- **feh**
+- **feh** https://github.com/derf/feh
 - **MuPDF**
 
 #### Downloads
-- **youtube-dl**
+- **youtube-dl** https://github.com/rg3/youtube-dl
 - **deluge** or **transmission**
 
 #### Fonts:
 - **tewi** https://github.com/lucy/tewi-font  
-Bitmap font with many glyphs, including powerline.
+Bitmap font with powerline glyphs.
 
 ## Others
 
