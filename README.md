@@ -22,16 +22,16 @@ Config files for GNU/Linux desktops. Belong into home directory ``~``.
   
 ```
 
-## Current desktop
+### Current desktop
 
-### Window manager
-- **OpenBox** https://wiki.archlinux.org/index.php/openbox
+#### Window manager
+- **OpenBox** https://wiki.archlinux.org/index.php/openbox  
 Floating window manager only.
 
-### Taskbar
-- **tint2** https://wiki.archlinux.org/index.php/tint2
+#### Taskbar
+- **tint2** https://wiki.archlinux.org/index.php/tint2  
 Only using it to have windows and workspaces displayed.
-- **conky** https://wiki.archlinux.org/index.php/conky
+- **conky** https://wiki.archlinux.org/index.php/conky  
 Using it to display some system and program stats.
 
 <ul>
