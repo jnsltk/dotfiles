@@ -1,15 +1,24 @@
 "░▒▓█ Vim config
-"░▒▓█ Settings
-"Start Vundle
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+"░▒▓█ Settings
+"Start Vundle
 filetype off
 syntax on
 set number
 set noswapfile
 set nocompatible
+set title
+set shortmess=at
+set cursorline
 set term=screen-256color
+set background=dark
 set mouse=a
+set clipboard=unnamedplus
+set hidden
+set laststatus=2
+set equalalways
+set noshowmode
 "░▒▓█ Plugins
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -49,7 +58,11 @@ set expandtab
 "set colorcolumn=80
 "set smarttab
 "set smartindent
-"░▒▓█ Auto commands
+"░▒▓█ Keybinds
+let mapleader=","
+let maplocalleader=","
+nmap <silent> <leader>w :set invwrap<CR>:set wrap?<CR>
+"░▒▓█ Autocommands
 autocmd VimEnter * AirlineToggleWhitespace
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
