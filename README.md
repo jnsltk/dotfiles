@@ -59,11 +59,3 @@ Floating window manager. Best use with titlebars on laptops and devices used oft
 ### Font
 - **tewi** https://github.com/lucy/tewi-font  
 Bitmap font with powerline glyphs.
-
-## old desktops
-
-### herbstluftwm
-<ul>
-  <li><a href="herbstluftwm/">herblustfwm config files</a></li>
-  <li><a href="firefox/firefox-css-twily">Firefox css for Stylish add-on</a></li>
-</ul>
