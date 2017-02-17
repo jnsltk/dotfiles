@@ -1,4 +1,4 @@
-# dotfiles
+# .files
 
 Config files for GNU/Linux desktops. Belong into home directory ``~``.
 
