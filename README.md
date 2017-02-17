@@ -49,6 +49,9 @@ Floating window manager. Best use with titlebars on laptops and devices used oft
 - **MPD** https://github.com/MaxKellermann/MPD
 - **ncmpcpp** https://github.com/arybczak/ncmpcpp
 
+### IRC client
+- **weechat** https://github.com/weechat/weechat
+
 ### File viewer
 - **feh** https://github.com/derf/feh
 - **MuPDF** https://github.com/muennich/mupdf
