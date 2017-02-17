@@ -31,10 +31,8 @@ Config files for GNU/Linux desktops. Belong into home directory ``~``.
 Floating window manager. Best use with titlebars on laptops and devices used often with one hand :new_moon_with_face:
 
 ### Taskbar
-- **tint2** https://github.com/chazmcgarvey/tint2  
-Display open windows and workspaces.
-- **conky** https://github.com/brndnmtthws/conky  
-Display some system and program stats + weather script.
+- **tint2** https://github.com/chazmcgarvey/tint2
+- **conky** https://github.com/brndnmtthws/conky
 
 ### Terminal
 - **urxvt** https://github.com/exg/rxvt-unicode
