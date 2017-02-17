@@ -22,43 +22,43 @@ Config files for GNU/Linux desktops. Belong into home directory ``~``.
   
 ```
 
-### Current desktop
+## Current desktop
 
 ![Desktop scrot](https://my.mixtape.moe/syeazw.png)
 
-#### Window manager
+### Window manager
 - **OpenboxWM** https://github.com/danakj/openbox  
-Floating window manager. IMO best with titlebars for laptops and using your device with one hand ( ͡° ͜ʖ ͡°)
+Floating window manager. Best use with titlebbars on laptops and devices used often with one hand :new_moon_with_face:
 
-#### Taskbar
+### Taskbar
 - **tint2** https://github.com/chazmcgarvey/tint2  
 Display open windows and workspaces.
 - **conky** https://github.com/brndnmtthws/conky  
 Display some system and program stats + weather script.
 
-#### Terminal
+### Terminal
 - **urxvt** https://github.com/exg/rxvt-unicode
 - **zsh/oh-my-zsh** https://github.com/robbyrussell/oh-my-zsh
 - **tmux** https://github.com/tmux/tmux
 
-#### Text editor
+### Text editor
 - **vim** https://github.com/vim/vim
 
-#### File manager
+### File manager
 - **ranger** https://github.com/ranger/ranger
 
-#### Music management
+### Music management
 - **MPD** https://github.com/MaxKellermann/MPD
 - **ncmpcpp** https://github.com/arybczak/ncmpcpp
 
-#### File viewer
+### File viewer
 - **feh** https://github.com/derf/feh
 - **MuPDF** https://github.com/muennich/mupdf
 
-#### Downloads
+### Downloads
 - **youtube-dl** https://github.com/rg3/youtube-dl
 
-#### Fonts:
+### Font
 - **tewi** https://github.com/lucy/tewi-font  
 Bitmap font with powerline glyphs.
 
