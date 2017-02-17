@@ -48,22 +48,21 @@ Display some system and program stats + weather script.
 - **ranger** https://github.com/ranger/ranger
 
 #### Music management
-- **MPD**
-- **ncmpcpp**
+- **MPD** https://github.com/MaxKellermann/MPD
+- **ncmpcpp** https://github.com/arybczak/ncmpcpp
 
 #### File viewer
 - **feh** https://github.com/derf/feh
-- **MuPDF**
+- **MuPDF** https://github.com/muennich/mupdf
 
 #### Downloads
 - **youtube-dl** https://github.com/rg3/youtube-dl
-- **deluge** or **transmission**
 
 #### Fonts:
 - **tewi** https://github.com/lucy/tewi-font  
 Bitmap font with powerline glyphs.
 
-## Others
+## old desktops
 
 ### herbstluftwm
 <ul>
