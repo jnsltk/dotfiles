@@ -34,53 +34,35 @@ Only using it to have windows and workspaces displayed.
 - **conky** https://wiki.archlinux.org/index.php/conky  
 Using it to display some system and program stats.
 
-<ul>
- <li><b>File manager:</b> <a href="https://wiki.archlinux.org/index.php/ranger">ranger</a>
-    <ul>
-      <li><a href="ranger/rc.conf">Config file</a></li>
-    </ul>
- </li>
- <li><b>Music playback:</b> <a href="https://wiki.archlinux.org/index.php/mpd">MPD</a>
-    <ul>
-      <li><a href="mpd/.mpdconf">Config file</a></li>
-    </ul>
- </li>
- <li><b>Music management:</b> <a href="https://wiki.archlinux.org/index.php/ncmpcpp">ncmpcpp</a>
-    <ul>
-      <li><a href="ncmpcpp/config">Config file</a></li>
-    </ul>
- </li>
- <li><b>Web browser:</b> <a href="https://wiki.archlinux.org/index.php/Firefox">Firefox</a>
-    <ul>
-    <li><b>Add-ons I use:</b> uBlock origin, HTTPS everywhere, NoScript</li>
-    <li><b>Search engine:</b> Startpage HTTPS</li>
-    </ul>
- </li>
-</ul>
+#### Terminal
+- **urxvt** 
+- **zsh**  
+With oh-my-zsh.
+- **tmux**  
 
+#### Code editor
+- **vim**
 
-## Other programs:
+#### File manager
+- **ranger**
 
-<ul>
-<li><b>Image viewer:</b> <a href="https://wiki.archlinux.org/index.php/feh">feh</a></li>
-<li><b>PDF reader:</b> <a href="https://mupdf.com/">MuPDF</a></li>
-<li><b>YouTube downlaoder:</b> <a href="https://rg3.github.io/youtube-dl/">youtube-dl</a></li>
-</ul>
+#### Music management
+- **MPD**
+- **ncmpcpp**
 
-## Fonts:
+#### File viewer
+- **feh**
+- **MuPDF**
 
-<ul>
-<li><b>Font:</b> <a href="https://github.com/lucy/tewi-font">Tewi</a></li>
-</ul>
+#### Downloads
+- **youtube-dl**
+- **deluge** or **transmission**
 
-## Current desktop:
+#### Fonts:
+- **tewi** https://github.com/lucy/tewi-font  
+Bitmap font with many glyphs, including powerline.
 
-### OpenBox // tint2 // conky
-
-<img src="https://my.mixtape.moe/hjevtj.png" alt="Debian desktop" title="Debian desktop" />
-
-
-## Old desktops:
+## Others
 
 ### herbstluftwm
 <ul>
