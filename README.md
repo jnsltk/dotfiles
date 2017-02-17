@@ -17,10 +17,14 @@ Config files for my Linux desktops. Belong into home directory ``~``.
   tint2           │   tint2rc
   tmux            │   .tmux.conf
   urxvt           │   .Xdefaults
+  vim             │   .vimrc
+  zsh             │   .oh-my-zsh config and aliases
   
 ```
 
-## Programs I use:
+## Current desktop
+
+
 
 <ul>
   <li><b>Window manager:</b> <a href="https://wiki.archlinux.org/index.php/openbox">OpenBox</a>
