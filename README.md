@@ -4,8 +4,8 @@ Config files for GNU/Linux desktops. Belong into home directory ``~``.
 
 ```
 
-  Folder              Contents
-  ────────────────┬───────────────────────────────────────────────────
+  Folder          │   Contents
+  ────────────────┼───────────────────────────────────────────────────────────────
   conky           │   .conkyrc
   firefox         │   Stylish CSS for Firefox
   herblustftwm    │   autostart file and panel.sh
