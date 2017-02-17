@@ -24,15 +24,17 @@ Config files for GNU/Linux desktops. Belong into home directory ``~``.
 
 ### Current desktop
 
+![https://my.mixtape.moe/syeazw.png]
+
 #### Window manager
 - **OpenBox** https://wiki.archlinux.org/index.php/openbox  
-Floating window manager only.
+Floating window manager.
 
 #### Taskbar
 - **tint2** https://wiki.archlinux.org/index.php/tint2  
-Only using it to have windows and workspaces displayed.
+Display open windows and workspaces.
 - **conky** https://wiki.archlinux.org/index.php/conky  
-Using it to display some system and program stats.
+Display some system and program stats + weather script.
 
 #### Terminal
 - **urxvt** 
