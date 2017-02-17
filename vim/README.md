@@ -4,5 +4,6 @@ Run ``vim +PluginInstall`` or ``:source %`` + ``:PluginInstall`` in vim to insta
 
 ## Shortcuts
 ```
-Strg+n         |   Toggle NerdTree
+Strg + n         |   Toggle NerdTree
+, + w            |   Toggle wrap and nowrap
 ```
