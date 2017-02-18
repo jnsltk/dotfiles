@@ -45,6 +45,9 @@ Floating window manager. Best use with titlebars on laptops and devices used oft
 ### File manager
 - **ranger** https://github.com/ranger/ranger
 
+### Program manager
+- **dmenu** https://github.com/michaelforney/dmenu
+
 ### Music management
 - **MPD** https://github.com/MaxKellermann/MPD
 - **ncmpcpp** https://github.com/arybczak/ncmpcpp
