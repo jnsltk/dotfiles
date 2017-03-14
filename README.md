@@ -32,6 +32,9 @@ Config files for GNU/Linux desktops. Belong into home directory ``~``.
 - **OpenboxWM** https://github.com/danakj/openbox  
 Floating window manager.
 
+### Window compositor/shadows
+- **compton** https://github.com/chjj/compton
+
 ### Taskbar
 - **tint2** https://github.com/chazmcgarvey/tint2
 - **conky** https://github.com/brndnmtthws/conky
@@ -46,9 +49,6 @@ Floating window manager.
 
 ### File manager
 - **ranger** https://github.com/ranger/ranger
-
-### Shadows
-- **compton** https://github.com/chjj/compton
 
 ### Program manager
 - **dmenu** https://github.com/michaelforney/dmenu
