@@ -9,6 +9,7 @@ Config files for GNU/Linux desktops. Belong into home directory ``~``.
   conky           │   .conkyrc
   firefox         │   Stylish CSS for Firefox
   herblustftwm    │   autostart file and panel.sh
+  mopidy          │   mopidy.conf
   mpd             │   mpd config file
   ncmpcpp         │   ncmpcpp config file
   openbox         │   autostart file, menu.xml, rc.xml and theme files
@@ -18,6 +19,7 @@ Config files for GNU/Linux desktops. Belong into home directory ``~``.
   tmux            │   .tmux.conf
   urxvt           │   .Xdefaults
   vim             │   .vimrc
+  xdg             │   .xsession
   zsh             │   .oh-my-zsh config and aliases
   
 ```
@@ -44,6 +46,9 @@ Floating window manager.
 
 ### File manager
 - **ranger** https://github.com/ranger/ranger
+
+### Shadows
+- **compton** https://github.com/chjj/compton
 
 ### Program manager
 - **dmenu** https://github.com/michaelforney/dmenu
