@@ -24,7 +24,7 @@ Config files for GNU/Linux desktops. Belong into home directory ``~``.
 
 ## Current desktop
 
-![Desktop scrot](https://my.mixtape.moe/bfesbs.png)
+![Desktop scrot](https://tknk.io/d1yq)
 
 ### Window manager
 - **OpenboxWM** https://github.com/danakj/openbox  
