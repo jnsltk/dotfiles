@@ -4,21 +4,19 @@
 #
 # Font used: https://github.com/lucy/tewi-font
 # Weather script: https://bbs.archlinux.org/viewtopic.php?id=37381
-
+#░░█ General
 background no
 update_interval 1.5
 total_run_times 0
 no_buffers yes
 cpu_avg_samples 2
 override_utf8_locale yes
-
-# Font
+#░░█ Font
 font tewi:size=9
 uppercase no
 use_xft yes
 xftalpha 1
-
-# Window
+#░░█ Window
 own_window yes
 own_window_transparent no
 own_window_colour 191c23
@@ -26,23 +24,20 @@ own_window_type desktop
 own_window_argb_visual yes
 own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
 double_buffer yes
-
-# Dimension
+#░░█ Dimension
 minimum_size 1366
 maximum_width 1920
 alignment top_right
 gap_x 0
 gap_y 4
-
-# Look
+#░░█ Look
 draw_shades no
 draw_outline no
 draw_borders no
 draw_graph_borders no
 default_color 444444
 border_inner_margin 2
-
-# Colors
+#░░█ Colors
 # Blue
 color1 495d6e
 color2 8197a9
@@ -52,7 +47,6 @@ color4 a35b66
 # Green
 color5 80aa83
 color6 b4d8b7
-
 TEXT
 ${alignr}${color1}${if_empty ${exec cat /proc/net/route | grep tun0}} ${else}VPN${endif}  \
 ${alignr}${color1}⯍${color} ${color2}${cpu cpu0}%${color}  \
@@ -63,7 +57,6 @@ ${alignr}${color4}⭫${color} ${color3}${downspeedf wlan0}${color}${color4}k${co
 ${alignr}${if_mpd_playing}${color5}♫${color} ${color6}${mpd_artist} - ${mpd_title 32}  ${color}${endif}\
 ${alignr}${color5}☁ ${color6}${execi 300 /usr/local/bin/weather.sh "EUR|DE|Stein-Neukirch"}${color}  \
 ${alignr}${color5}⬒ ${color6}${time %d. %a}${color} ${color5}${color6}${time %H}:${time %M}${color} \
-
 #diskspace: ${fs_used /}/${fs_size /}
 #external ip: ${exec curl -s www.icanhazip.com}
 #diskio: ${diskio}
