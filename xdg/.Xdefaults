@@ -1,46 +1,38 @@
-
-!░░█▄ Window Settings
+!░░█ X11 defaults
+!░░█ Window Settings
 URxvt*scrollBar: false
-
-!░░█▄ Font
+URxvt*termName: rxvt-unicode-256color
+!░░█ Font
 !URxvt.font:           xft:Droid Sans Mono for Powerline:bold:pixelsize=12
 !URxvt.boldFont:       xft:Droid Sans Mono for Powerline:bold:pixelsize=12
 !URxvt.italicFont:     xft:Droid Sans Mono for Powerline:italic:pixelsize=12
 !URxvt.boldItalicFont: xft:Droid Sans Mono for Powerline:bold:italic:pixelsize=12
-
 URxvt.font: xft:tewi-medium:pixelsize=12
 URxvt.boldFont: xft:tewi-medium:pixelsize=12
 *boldFont: -misc-fixed-bold-r-normal--15-140-75-75-c-90-iso10646-1
 *font: -misc-fixed-medium-r-normal--15-140-75-75-c-90-iso10646-1
-
+!░░█ Font settings
+!URxvt*letterSpace: -2
+!URxvt*depth: 32
+!URxvt*antialias: true
+!░░█ Xft settings
 !Xft.dpi:        132
 !Xft.antialias:  true
 !Xft.rgba:       rgba
 !Xft.hinting:    true
 !Xft.autohint: true
 !Xft.hintstyle:  hintfull
-
+!░░█ Borders
 URxvt.externalBorder:0
 URxvt.internalBorder:5
-
-URxvt*termName: rxvt-unicode-256color
-
-!░░█▄ Font settings
-!URxvt*letterSpace: -2
-!URxvt*depth: 32
-!URxvt*antialias: true
-
-!░░█▄ Clickable links
+!░░█ Clickable links
 URxvt.perl-ext-common: default,matcher
 URxvt.url-launcher: /usr/bin/xdg-open
 URxvt.matcher.button: 1
-
-!░░█▄ Colors
+!░░█ Colors
 URxvt*cursorColor: 1
-
-!░█▄ First color = bright tone
-!░█▄ Second color = dark tone
-
+!░█ First color = bright tone
+!░█ Second color = dark tone
 ! tangoesque scheme
 *background: #191c23
 *foreground: #9bbbc6
