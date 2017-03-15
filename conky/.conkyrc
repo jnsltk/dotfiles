@@ -1,9 +1,8 @@
-# Conky config
-# http://conky.sourceforge.net/variables.html
-# http://conky.sourceforge.net/documentation.html
-#
-# Font used: https://github.com/lucy/tewi-font
-# Weather script: https://bbs.archlinux.org/viewtopic.php?id=37381
+#░░█ Conky config
+#░░█ http://conky.sourceforge.net/variables.html
+#░░█ http://conky.sourceforge.net/documentation.html
+#░░█ Font used: https://github.com/lucy/tewi-font
+#░░█ Weather script: https://bbs.archlinux.org/viewtopic.php?id=37381
 #░░█ General
 background no
 update_interval 1.5
