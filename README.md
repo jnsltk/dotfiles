@@ -19,7 +19,7 @@ Config files for GNU/Linux desktops. Belong into home directory ``~``.
   tmux            │   .tmux.conf
   urxvt           │   .Xdefaults
   vim             │   .vimrc
-  xdg             │   .xsession
+  x11             │   .xsession
   zsh             │   .oh-my-zsh config and aliases
   
 ```
