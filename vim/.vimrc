@@ -1,8 +1,8 @@
 "░▒▓█ Vim config
+" Start Vundle
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 "░▒▓█ Settings
-"Start Vundle
 filetype off
 syntax on
 set number
@@ -23,9 +23,27 @@ set noshowmode
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'gmarik/Vundle.vim'
+Plugin 'godlygeek/tabular'
+Plugin 'gabrielelana/vim-markdown'
+Plugin 'pangloss/vim-javascript'
+Plugin 'shougo/neocomplete.vim'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Yggdroot/indentLine'
+"░▒▓█ Markdown
+"let g:vim_markdown_folding_disabled=1
+"set conceallevel=2
+"░▒▓█ Neocomplete
+let g:acp_enableAtStartup=0
+let g:neocomplete#enable_at_startup=1
+let g:neocomplete#enable_smart_case=1
+let g:neocomplete#sources#syntax#min_keyword_length=3
+" Omni completion
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 "░▒▓█ Nertree
 map <C-n> :NERDTreeToggle<CR>
 let NERDTreeMinimalUI=1
@@ -35,7 +53,9 @@ let NERDTreeShowHidden=1
 let g:airline_powerline_fonts=1
 let g:airline_theme='base16color'
 "░▒▓█ Colors
-hi LineNr ctermfg=darkblue
+hi LineNr ctermfg=8
+hi CursorLine ctermbg=black
+hi CursorLineNr ctermfg=blue
 hi VertSplit ctermfg=8
 "colorscheme chocolate
 "░▒▓█ indentLine
@@ -62,11 +82,13 @@ set expandtab
 let mapleader=","
 let maplocalleader=","
 nmap <silent> <leader>w :set invwrap<CR>:set wrap?<CR>
+"nmap <silent> <leader>f :tabn
+:map <F5> :checktime<CR>
 "░▒▓█ Autocommands
 autocmd VimEnter * AirlineToggleWhitespace
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
-"Close Nerdtree when its the last buffer
+" Close Nerdtree when its the last buffer
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-"End Vundle
+" End Vundle
 call vundle#end()
