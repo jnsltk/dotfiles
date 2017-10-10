@@ -28,12 +28,8 @@ Config files for GNU/Linux desktops. Belong into home directory ``~``.
 
 ![Desktop scrot](https://tknk.io/d1yq)
 
-### Window manager
-- **OpenboxWM** https://github.com/danakj/openbox  
-Floating window manager.
-
-### Window compositor/shadows
-- **compton** https://github.com/chjj/compton
+- Window manager: ``[OpenboxWM](https://github.com/danakj/openbox)``
+- Compositor: ``[compton](https://github.com/chjj/compton)``
 
 ### Taskbar
 - **tint2** https://github.com/chazmcgarvey/tint2
