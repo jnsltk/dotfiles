@@ -1,0 +1,11 @@
+! rofi config of jltk
+
+rofi.modi: window,run,ssh
+rofi.color-enabled:true
+rofi.color-normal: #3e434a,#ffffff,#565f63,#586e75,#eee8d5
+rofi.color-urgent:#fdf6e3,#dc322f,#eee8d5,#dc322f,#fdf6e3
+rofi.color-active: #5ed69c,#92dfe8,#eee8d5,#268bd2,#fdf6e3
+rofi.color-window: #e4a0bf,#dc578c
+rofi.columns: 1
+rofi.width: 25
+rofi.disable-history: false
