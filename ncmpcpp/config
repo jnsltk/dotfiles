@@ -1,33 +1,28 @@
-mpd_music_dir = "/home/aro/music/"  
-mpd_connection_timeout = "5"  
-mpd_crossfade_time = "5"  
-playlist_disable_highlight_delay = "0"  
-browser_display_mode = "columns"  
-incremental_seeking = "yes"  
-autocenter_mode = "yes"  
-user_interface="alternative"
-discard_colors_if_item_is_selected = "no"
-header_visibility = "yes"  
-statusbar_visibility = "no"  
-fancy_scrolling = "no"  
-follow_now_playing_lyrics = "yes"  
-playlist_display_mode="classic"
-display_screens_numbers_on_start = "yes"  
-ignore_leading_the = "yes"  
-lyrics_database = "1"  
-song_list_format = "(30)[orange]{a} (10)[red]{l} (30)[blue]{b}"  
-colors_enabled = "yes"  
-main_window_color = "white"  
-header_window_color = "cyan"  
-volume_color = "red"  
-progressbar_color = "cyan"  
-statusbar_color = "white"  
-color1 = "cyan"  
-color2 = "cyan"  
-active_column_color = "cyan"  
-active_window_border = "blue"
-now_playing_prefix = "♪ "
-progressbar_look = "───"
-colors_enabled="yes"
-autocenter_mode="yes"
-system_encoding="utf-8"
+# ncmpcpp config of jltk
+# https://wiki.archlinux.org/index.php/ncmpcpp
+
+mpd_music_dir = "~/music"
+
+# appearal
+browser_display_mode = "classic"
+playlist_display_mode = "columns"
+main_window_color = "white"
+statusbar_visibility = "no"
+titles_visibility = "no"
+header_visibility = "no"
+display_remaining_time = "no"
+playlist_disable_highlight_delay = "1"
+
+# formatting
+song_columns_list_format = "(40)[white]{a}(40)[white]{tr}(20)[black]{y}"
+now_playing_prefix = "$6→ "
+progressbar_look = "─┃─"
+
+# colors
+
+# visualizer
+visualizer_sync_interval = "30"
+visualizer_output_name = "fifo"
+visualizer_fifo_path = "/tmp/mpd.fifo"
+visualizer_type = "spectrum" #more options: ellipse, wave, wave_filled
+visualizer_look = "∙▒"
