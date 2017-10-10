@@ -11,3 +11,4 @@
 - Terminal multiplexer: ``tmux``
 - Application manager: ``dmenu``
 - Font: ``tewi``
+- Music player: ``ncmpcpp``
