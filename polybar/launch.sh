@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-# clean start for polybar used in xinitrc
+# clean start for polybar used at systemstart
 
 # terminate all polybar processes
 killall -q polybar
