@@ -1,4 +1,4 @@
-# .bashrc by suits
+# .bashrc of jltk
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
