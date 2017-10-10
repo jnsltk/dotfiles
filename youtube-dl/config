@@ -1,0 +1,9 @@
+# youtube-dl config of jltk
+
+-o ~/Videos/%(title)s.%(ext)s
+--restrict-filenames
+--youtube-skip-dash-manifest
+--no-call-home
+--no-overwrites
+--no-cache-dir
+--format 22
