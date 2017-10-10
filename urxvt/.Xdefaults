@@ -1,4 +1,4 @@
-# rxvt-unicode config of jltk
+# urxvt config of jltk
 
 URxvt*scrollBar: false
 URxvt*perl-ext-common: default,matcher
