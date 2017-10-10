@@ -88,13 +88,6 @@ label-padding-right = 3
 ;format-underline = #268bd2
 ;format-prefix-foreground = #f0f0f0
 
-[module/redshift]
-type = custom/script
-interval = 5
-exec = ~/.config/polybar/redshift.sh
-label-padding-left = 3
-label-padding-right = 3
-
 [module/mpd]
 type = internal/mpd
 interval = 2
