@@ -1,0 +1,167 @@
+# nethackrc by jltk
+
+# switch y and z key for german keyboard layout
+OPTIONS=number_pad:-1
+
+# character
+OPTIONS=name:suitsu
+OPTIONS=role:Samurai
+OPTIONS=race:Human
+OPTIONS=align:lawful
+OPTIONS=gender:male
+OPTIONS=pettype:dog
+
+# settings
+OPTIONS=nocmdassist
+OPTIONS=color
+
+OPTIONS=autoopen
+OPTIONS=dark_room
+
+OPTIONS=showexp
+OPTIONS=showrace
+OPTIONS=showscore
+
+OPTIONS=time
+OPTIONS=travel
+
+OPTIONS=boulder:0
+OPTIONS=menustyle:full
+
+OPTIONS=checkpoint
+OPTIONS=autodig
+OPTIONS=autoquiver
+
+# autopickup options by wiki
+# https://nethackwiki.com/wiki/Autopickup_exception
+
+OPTIONS=autopickup
+OPTIONS=pickup_types:$!?/"=+
+OPTIONS=pickup_burden:unencumbered
+
+# autopickup expections
+AUTOPICKUP_EXCEPTION=">chest"
+AUTOPICKUP_EXCEPTION="<dagger"
+
+# samurai knowledge
+AUTOPICKUP_EXCEPTION=">Amulet of Yendor$"
+AUTOPICKUP_EXCEPTION="<Amulet of Vendor dupe"
+
+# only pick up corpses by lizards, newts, lichen, wraiths, or floating eyes
+AUTOPICKUP_EXCEPTION=">a corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">b corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">c corpse[^<]*$"
+
+# lizards, but not wizards or guards or lords
+AUTOPICKUP_EXCEPTION="<lizard corpse"
+AUTOPICKUP_EXCEPTION=">[^r]d corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">[^a]rd corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">[^z]ard corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">[^l]izard corpse[^<]*$"
+
+#floating eye corpse
+AUTOPICKUP_EXCEPTION="<floating eye corpse"
+AUTOPICKUP_EXCEPTION=">[^y]e corpse[^<]*$"
+
+AUTOPICKUP_EXCEPTION=">f corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">g corpse[^<]*$"
+
+# wraiths, but not Ixoth or Death
+AUTOPICKUP_EXCEPTION="<wraith corpse"
+AUTOPICKUP_EXCEPTION=">[^t]h corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">[^i]th corpse[^<]*$"
+
+AUTOPICKUP_EXCEPTION=">i corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">k corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">l corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">m corpse[^<]*$"
+
+#lichen corpse, but not all that other en stuff
+AUTOPICKUP_EXCEPTION="<lichen corpse"
+AUTOPICKUP_EXCEPTION=">[^e]n corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">[^h]en corpse[^<]*$"
+
+AUTOPICKUP_EXCEPTION=">o corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">p corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">r corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">s corpse[^<]*$"
+
+# newt
+AUTOPICKUP_EXCEPTION="<newt corpse"
+AUTOPICKUP_EXCEPTION=">[^w]t corpse[^<]*$"
+
+AUTOPICKUP_EXCEPTION=">u corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">v corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">x corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">y corpse[^<]*$"
+AUTOPICKUP_EXCEPTION=">' corpse[^<]*$"
+
+## Colored menus. Regular expressions allowed.
+# https://alt.org/nethack/userdata/R/Raisse/Raisse.nh360rc
+
+OPTIONS=menucolors
+
+MENUCOLOR=" blessed"=green                                     
+MENUCOLOR=" uncursed"=cyan                                                    
+MENUCOLOR=" named nc"=cyan                                      
+MENUCOLOR=" cursed"=red                                         
+MENUCOLOR=" named pc"=red                                      
+                                                              
+MENUCOLOR=" water"=lightblue                                    
+MENUCOLOR=" called plain"=lightblue                            
+MENUCOLOR=" clear"=lightblue                                   
+MENUCOLOR=" holy water"=lightcyan                                             
+MENUCOLOR=" unholy water"=blue                                  
+                                                              
+MENUCOLOR=" blessed .* water"=lightcyan                          
+MENUCOLOR=" blessed clear"=lightcyan                                          
+MENUCOLOR=" cursed .* water"=blue                               
+MENUCOLOR=" cursed clear"=blue                                         
+                                                               
+MENUCOLOR=" worn"=cyan&inverse                                        
+MENUCOLOR=" blessed .* worn"=green&inverse 
+MENUCOLOR=" cursed .* worn"=red&inverse
+
+MENUCOLOR=" cursed .* wielded"=red&inverse
+MENUCOLOR=" cursed .* hand"=red&inverse  
+
+MENUCOLOR=" blessed .* bag of holding"=green&underline          
+MENUCOLOR=" uncursed .* bag of holding"=cyan&underline                        
+MENUCOLOR=" cursed .* bag of holding"=red&underline             
+                                                                
+MENUCOLOR=" wand of cancellation"=orange&underline             
+MENUCOLOR=" called cancellation"=orange&underline              
+MENUCOLOR=" bag of tricks"=orange&underline                     
+                                                               
+MENUCOLOR=" (gauntlets|gloves|boots) .* fumbl"=orange          
+MENUCOLOR=" fumble boots"=orange                                
+MENUCOLOR=" dunce cap"=orange                         
+MENUCOLOR="align"=orange                                         
+MENUCOLOR=" c(hi|o)ckatrice corpse"=yellow                       
+MENUCOLOR=" cockatrice egg"=yellow                               
+                                                                 
+MENUCOLOR=":0"=yellow                                            
+MENUCOLOR="named op"=yellow                                      
+MENUCOLOR="empty"=yellow
+                                                                 
+MENUCOLOR="wishing"=lightcyan                                                 
+MENUCOLOR="unpaid"=white&underline         
+
+# Spellcasting
+
+MENUCOLOR=" 0% "=white                                                       
+MENUCOLOR=" [1-9]% "=cyan                                                      
+MENUCOLOR=" [12][0-9]% "=yellow                                                
+MENUCOLOR=" [3-5][0-9]% "=brown                                                
+MENUCOLOR=" [6-8][0-9]% "=orange                                               
+MENUCOLOR=" 9[0-9]% "=red                                                      
+MENUCOLOR=" 100% "=red                                                         
+MENUCOLOR="[a-zA-Z] - [a-zA-Z ]+ [0-9]\*   [a-z]+ +[0-9]+% "=black
+
+# Enhance                                                       
+MENUCOLOR=" \[Basic\]$"=green                                   
+MENUCOLOR=" \[(Skilled|Master)\]$"=lightgreen                  
+MENUCOLOR=" \[(Expert|Grand Master)\]$"=white                  
+MENUCOLOR=" martial arts +\[Expert\]$"=green                    
+MENUCOLOR="^ *[a-z -]+ +\[Unskilled\]$"=black                  
+#MENUCOLOR="^ *[a-z] - +[a-z -]+ +\[(Unskilled|Basic|Skilled|Expert|Master)\]$"
