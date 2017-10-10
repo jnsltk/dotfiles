@@ -3,7 +3,7 @@
 ![Desktop scrot](https://tknk.io/d1yq)
 
 - Distro: ``Debian Jessie``
-- Window manager: ``OpenboxWM``
+- Window manager: ``Openbox``
 - Compositor: ``compton``
 - Taskbar workspaces/windows: ``tint2``
 - Taskbar infos: ``conky``
@@ -11,4 +11,3 @@
 - Terminal multiplexer: ``tmux``
 - Application manager: ``dmenu``
 - Font: ``tewi``
-- Music player: ``ncmpcpp``
