@@ -1,3 +1,3 @@
 # .files
 
-Config files for GNU/Linux desktops. Set $XDG_HOME_DIR variable.
+Config files for my GNU/Linux desktop. Set $XDG_HOME_DIR variable.
