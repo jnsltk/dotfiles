@@ -2,7 +2,8 @@
 
 Config files for my GNU/Linux desktop.
 
-- Distro: Void
+Distro: [Void Linux](https://voidlinux.eu)
+
 - Shell: bash
 - Terminal emulator: urxvt
 - WM: herbstluftwm
@@ -11,3 +12,6 @@ Config files for my GNU/Linux desktop.
 - Text edtior: vim
 - Music daemon: MPD
 - Music player: ncmpcpp
+- IRC: weechat
+- Screenlock: i3lock
+- Video Downloading: youtube-dl
