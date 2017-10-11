@@ -4,10 +4,15 @@
 [[ $- != *i* ]] && return
 
 source /usr/share/git/git-prompt.sh
-export GIT_PS1_SHOWCOLORHINTS=1
+#export GIT_PS1_SHOWCOLORHINTS=1
 export GIT_PS1_SHOWDIRTYSTATE=1
 
-PROMPT_COMMAND='__git_ps1 "\w" "\\\$ "'
+# using git-prompt.sh
+PS1="\w\$(__git_ps1 ' [%s]') $ "
+# show name of current folder in window title
+PROMPT_COMMAND='echo -ne "\033]0;$(basename ${PWD})\007"'
+# show name of opened program in window title
+trap 'echo -ne "\033]2;$(history 1 | sed "s/^[ ]*[0-9]*[ ]*//g")\007"' DEBUG
 
 # check window sizes after command
 shopt -s checkwinsize
@@ -18,7 +23,6 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 # function aliases
-# https://www.digitalocean.com/community/tutorials/an-introduction-to-useful-bash-aliases-and-functions
 
 # video media
 twitch () { mpv --ytdl-format=$1 https://twitch.tv/$2 & }
