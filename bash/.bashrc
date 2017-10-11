@@ -24,7 +24,7 @@ fi
 
 # function aliases
 
-# video media
+# streams
 twitch () { mpv --ytdl-format=$1 https://twitch.tv/$2 & }
 
 # git
