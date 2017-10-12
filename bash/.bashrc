@@ -8,6 +8,7 @@ source /usr/share/git/git-prompt.sh
 export GIT_PS1_SHOWDIRTYSTATE=1
 
 # using git-prompt.sh
+# if wanna use colors in PS1 gotta contain them in \[ \] brackets
 PS1="\w\$(__git_ps1 ' [%s]') $ "
 # show name of current folder in window title
 PROMPT_COMMAND='echo -ne "\033]0;$(basename ${PWD})\007"'
