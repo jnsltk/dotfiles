@@ -18,9 +18,17 @@ trap 'echo -ne "\033]2;$(history 1 | sed "s/^[ ]*[0-9]*[ ]*//g")\007"' DEBUG
 # check window sizes after command
 shopt -s checkwinsize
 
+# set fzf colors
+export FZF_DEFAULT_OPTS='--color bg+:0,hl+:6 --color pointer:1,info:6'
+
 # call aliases file
 if [ -f ~/.bash_aliases ]; then
-. ~/.bash_aliases
+    . ~/.bash_aliases
+fi
+
+# call dircolors file
+if [ -f "$HOME/.dircolors" ] ; then
+    eval $(dircolors -b $HOME/.dircolors) 
 fi
 
 # function aliases
