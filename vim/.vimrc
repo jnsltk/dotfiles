@@ -1,4 +1,4 @@
-" vim config by jtlk
+" vim config of jtlk
 
 set encoding=utf-8
 
@@ -30,6 +30,7 @@ hi LineNr ctermfg=black
 hi NonText ctermfg=black
 hi SpecialKey ctermfg=black
 hi CursorLine ctermbg=black cterm=italic
+hi MatchParen ctermbg=red ctermfg=black
 
 " keybinds
 vnoremap  :w !xclip -sel clip
