@@ -1,15 +1,18 @@
 # urxvt config of jltk
 
+# window appearal
 URxvt*scrollBar: false
+URxvt.internalBorder: 8
+
+# clickable links
 URxvt*perl-ext-common: default,matcher
 URxvt*url-launcher: icecat
 URxvt.matcher.button: 1
-URxvt.internalBorder: 8
 
 # disable bold fonts
 URxvt.boldFont:
 
-# disable colors for italic, bold and underlined text
+# set colors for italic, bold and underlined text
 URxvt.colorIT: #656c77
 URxvt.colorBD: #656c77
 URxvt.colorUL: #69ACD3
