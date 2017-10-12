@@ -3,7 +3,7 @@
 Configuration files for my current GNU/Linux desktop (on an Acer notebook). I'm not a professional programmer and everything considering Linux and scripting on here is just for my personal use. If anything use this as an inspiration and pick ideas you like, to research them and integrate them on your system.
 
 ![current desktop scrot](https://u.teknik.io/mtICl.png)
-Wallpaper: [idk who to credit rn](https://u.teknik.io/tMg9x.png) (using a compressed version, resized for my screen size)
+Wallpaper: [idk who to credit rn](https://u.teknik.io/tMg9x.png) (using a compressed version, resized for my screen size)  
 Distro: [Void Linux](https://voidlinux.eu)
 
 - Shell: ``bash``
