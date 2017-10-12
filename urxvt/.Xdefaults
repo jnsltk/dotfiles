@@ -12,6 +12,7 @@ URxvt.matcher.button: 1
 # disable bold and italic fonts
 URxvt.boldFont:
 URxvt.italicFont:
+URxvt.boldItalicFont:
 
 # set colors for italic, bold and underlined text
 URxvt.colorIT: #ffffff
