@@ -23,6 +23,7 @@ alias searchp='xbps-query -Rs'
 # downloading
 alias ytmp3='youtube-dl --ignore-config -x -o "~/music/%(title)s.%(ext)s" --audio-format mp3'
 alias yt360p='youtube-dl --format 134+140'
+alias yt480p='youtube-dl --format 135+140'
 
 # recording
 alias screenrecord='recordmydesktop --no-cursor --fps 24 --no-sound -o screenrecord'
