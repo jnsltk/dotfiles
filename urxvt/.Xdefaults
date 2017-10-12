@@ -5,10 +5,19 @@ URxvt*perl-ext-common: default,matcher
 URxvt*url-launcher: icecat
 URxvt.matcher.button: 1
 URxvt.internalBorder: 8
-URxvt*cursorColor: #dc579c
 
+# disable bold fonts
+URxvt.boldFont:
+
+# disable colors for italic, bold and underlined text
+URxvt.colorIT: #656c77
+URxvt.colorBD: #656c77
+URxvt.colorUL: #69ACD3
+
+URxvt*cursorColor: #dc579c
 URxvt*background: #272d36
 URxvt*foreground: #bac3d0
+
 URxvt*color0: #3e434a
 URxvt*color1: #dc578c
 URxvt*color2: #5ed69c
