@@ -1,10 +1,10 @@
 # .bashrc of jltk
 
-# If not running interactively, don't do anything
+# if not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
 source /usr/share/git/git-prompt.sh
-#export GIT_PS1_SHOWCOLORHINTS=1
+#export GIT_PS1_SHOWCOLORHINTS=1 // doesn't work anymore
 export GIT_PS1_SHOWDIRTYSTATE=1
 
 # using git-prompt.sh
@@ -24,13 +24,14 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 # function aliases
-
 # streams
+# $ twitch 480p twitchname
 twitch () { mpv --ytdl-format=$1 https://twitch.tv/$2 & }
 
 # git
+# $ gitpush "commit message"
 gitpush () {
-    sleep 1 && echo "Adding all changed files."
+    sleep 1 && echo "Adding all new and modified files."
     git add .
     sleep 1 && echo "Committing with given message."
     git commit -m "$1"
