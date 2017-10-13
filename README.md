@@ -5,7 +5,7 @@ Configuration files for my current GNU/Linux desktop (on an Acer notebook). I'm 
 ![current desktop scrot](https://u.teknik.io/wa8RE.png)
 ![current desktop scrot workspace](https://u.teknik.io/t0biA.png)
 
-Wallpaper: [Credit missing rn](https://u.teknik.io/tMg9x.png) (using a compressed version, resized to my screen size)  
+Wallpaper: [Credit missing](https://u.teknik.io/tMg9x.png) (using a compressed version, resized to my screen size)  
 Distro: [Void Linux](https://voidlinux.eu)
 
 - Shell: ``bash``
