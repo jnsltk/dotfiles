@@ -6,8 +6,8 @@ Configuration files for my current GNU/Linux desktop (on an Acer notebook). I'm 
 
 ![current desktop scrot workspace](https://u.teknik.io/qcPYQ.png)
 
-Wallpaper: [credit missing](https://u.teknik.io/tMg9x.png) (using a compressed version, resized to my screen size)  
-Browser startpage: [startpages repository](https://github.com/jltk/startpages)
+Wallpaper: [credit missing](https://u.teknik.io/tMg9x.png) (using compressed version that fits screen size)  
+Browser startpage: [startpages repository](https://github.com/jltk/startpages)  
 Distro: [Void Linux](https://voidlinux.eu)
 
 - Shell: ``bash``
