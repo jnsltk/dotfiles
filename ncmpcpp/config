@@ -1,5 +1,6 @@
-# ncmpcpp config of jltk
+# ncmpcpp config by suits
 # https://wiki.archlinux.org/index.php/ncmpcpp
+# https://www.mankier.com/1/ncmpcpp
 
 mpd_music_dir = "~/music"
 
@@ -12,13 +13,12 @@ titles_visibility = "no"
 header_visibility = "no"
 display_remaining_time = "no"
 playlist_disable_highlight_delay = "1"
+enable_window_title = no
 
 # formatting
-song_columns_list_format = "(40)[white]{a}(40)[white]{tr}(20)[black]{y}"
+song_columns_list_format = "(45)[white]{a}(40)[white]{tr}(15)[black]{y}"
 now_playing_prefix = "$6→ "
 progressbar_look = "─┃─"
-
-# colors
 
 # visualizer
 visualizer_sync_interval = "30"
