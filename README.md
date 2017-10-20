@@ -14,6 +14,7 @@ Distro: [Void Linux](https://voidlinux.eu)
 - Terminal emulator: ``urxvt``
 - WM: ``herbstluftwm``
 - Taskbar: ``Polybar``
+- Terminal multiplexer: ``tmux``
 - Application manager: ``rofi``
 - Text edtior: ``vim``
 - Music daemon: ``MPD``
