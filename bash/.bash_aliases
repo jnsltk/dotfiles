@@ -22,15 +22,17 @@ alias re='reset'
 alias searchp='xbps-query -Rs'
 
 # downloading
-alias ytmp3='youtube-dl --ignore-config -x -o "~/music/%(title)s.%(ext)s" --audio-format mp3'
-alias yt360p='youtube-dl --format 134+140'
-alias yt480p='youtube-dl --format 135+140'
+alias ytdlmp3='youtube-dl --ignore-config -x -o "~/music/%(title)s.%(ext)s" --audio-format mp3'
+alias ytdl360p='youtube-dl --format 134+140'
+alias ytdl480p='youtube-dl --format 135+140'
 
 # recording
 alias scrif='recordmydesktop --fps 24 --no-sound -o scrideo'
 
 # watching
-alias mpv480p='mpv --ytdl-format=135+140'
+alias yt360p='mpv --ytdl-format=134+140'
+alias yt480p='mpv --ytdl-format=135+140'
+alias yt720p='mpv --ytdl-format=22'
 
 # shortcuts to run own scripts that are in constant development
 alias pyt='cd ~/scripts/ytscraper; python2 ytscraper.py;'
