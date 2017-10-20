@@ -36,6 +36,12 @@ alias mpv480p='mpv --ytdl-format=135+140'
 alias pyt='cd ~/scripts/ytscraper; python2 ytscraper.py;'
 alias notes='cd ~/scripts/notes; python notes.py;'
 
+# translating
+alias trans-eng='dict -d fd-eng-deu'
+alias trans-deu='dict -d fd-deu-eng'
+alias trans-fra='dict -d fd-fra-deu'
+alias trans='dict -d all'
+
 # fun
 alias gay='toilet -f mono12 --gay'
 alias alittlegay='toilet -f future --gay'
