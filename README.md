@@ -2,9 +2,9 @@
 
 Configuration files for my current GNU/Linux desktop (on an Acer notebook). I'm not a professional programmer and everything considering Linux and (especially) scripting on here is just for my personal use, on which I constantly try to improve. If anything, use this as an inspiration and pick ideas you like, to research and integrate them on your own system.
 
-![current desktop scrot](https://u.teknik.io/SFx87.png)
+![current desktop scrot](https://u.teknik.io/sFytn.png)
 
-![current desktop scrot workspace](https://u.teknik.io/9Z4Uk.png)
+![current desktop scrot workspace](https://u.teknik.io/1kVqu.png)
 
 Wallpaper: [credit missing](https://u.teknik.io/tMg9x.png) (using compressed version that fits screen size)  
 Browser startpage: [startpages repository](https://github.com/jltk/startpages)  
