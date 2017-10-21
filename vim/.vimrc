@@ -19,6 +19,8 @@ set expandtab
 " word wrap
 set wrap linebreak nolist
 set breakindent
+set autoindent
+set smartindent
 
 " whitespace characters
 set list listchars=eol:¬,trail:·,tab:•\ ,extends:»,precedes:«
