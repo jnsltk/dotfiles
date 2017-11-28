@@ -26,4 +26,4 @@ Distro: [Void Linux](https://voidlinux.eu)
 
 See an overview of all software I use on my [linux-setup](https://github.com/jltk/linux-setup) repository.
 
-Awesome people to follow, which I draw a lot inspiration from: [eti](https://github.com/eti0), [onodera](https://github.com/onodera-punpun), [hal](https://github.com/hal-ullr), [danielfgray](https://github.com/DanielFGray), [xero](https://github.com/xero), [dylanaraps](https://github.com/dylanaraps) and generally everyone on ``#rice`` at [irc.rizon.net](https://rizon.net).
+Awesome people to follow, which I draw a lot inspiration from: [onodera](https://github.com/onodera-punpun), [eti](https://github.com/eti0), [hal](https://github.com/hal-ullr), [enju](https://github.com/enjuus), [danielfgray](https://github.com/DanielFGray), [xero](https://github.com/xero), [dylanaraps](https://github.com/dylanaraps) and generally everyone on ``#rice`` at [irc.rizon.net](https://rizon.net).
