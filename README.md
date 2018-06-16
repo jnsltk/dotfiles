@@ -2,9 +2,9 @@
 
 Configuration files for my current GNU/Linux desktop (on an Acer notebook). I'm not a professional programmer and everything considering Linux and (especially) scripting on here is just for my personal use, on which I constantly try to improve. If anything, use this as an inspiration and pick ideas you like, to research and integrate them on your own system.
 
-Wallpaper: [credit missing](https://u.teknik.io/tMg9x.png) (using compressed version that fits screen size)  
-Browser startpage: [startpages repository](https://github.com/jltk/startpages)  
-Distro: [Void Linux](https://voidlinux.eu)
+Distro: [Void Linux](https://voidlinux.eu)  
+Browser startpage: [local-startpage](https://github.com/jltk/local-startpage)  
+Wallpaper: [credit missing](https://u.teknik.io/tMg9x.png) (using compressed version that fits screen size)
 
 - Shell: ``bash``
 - Terminal emulator: ``urxvt``
